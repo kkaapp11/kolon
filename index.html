@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <!-- slick slider css cdn -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <!-- splide css연결 -->
     <link rel="stylesheet" href="css/splide.min.css" type="text/css">
     <!-- 외부 css 연결 -->
@@ -31,7 +31,7 @@
     <!-- tweenmax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <!-- slick slider js cdn -->
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- splide js 연결 -->
     <script src="js/splide.min.js"></script>
     <!-- 외부 js 연결 -->
@@ -829,5 +829,16 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript">
+        // slick slider(.six_tab)
+        $('.product').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+    </script>
+    
 </body>
 </html>
