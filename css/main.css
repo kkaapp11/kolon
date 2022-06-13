@@ -119,11 +119,13 @@ header nav {
     transition: all 0.5s;
     position: relative;
     z-index: 110;
+    
 }
 header nav > ul {
     /* 자식 객체 li를 가로로 정렬하고 균등배열 */
     display: flex;
     justify-content: space-between;       
+    
 }
 header nav > ul > li {
     text-align: center;
@@ -134,7 +136,7 @@ header nav > ul > li > a {
     font-weight: bold;
     font-size:16px;
     line-height:24px; 
-    /* padding: 0 30px; */
+    padding-bottom: 25px;
 }
 header nav > ul > li > a i {
     color:#164346;
@@ -158,7 +160,7 @@ header nav > ul > li .main_menu .main_menu_box {
     transition:all 0.3s;
 }
 header nav > ul > li > a p:first-child {
-    color:#164346;
+    color:#238085;
 }
 /* 주메뉴에 마우스 오버 했을 때 글자가 한글로 바뀌는 애니메이션 */
 header nav > ul > li:hover .main_menu .main_menu_box {
@@ -170,16 +172,18 @@ header nav > ul > li:hover i {
 }
 /* 내비게이션 서브메뉴 */
 header nav .sub {
+   
     padding:20px;
     display: none;
 }
 header nav .sub li a {
+    
     font-size:14px;
     padding:10px;
-    font-weight: 400;
+    font-weight: 600;
 }
 header nav .sub li a:hover {
-    color:#238085;
+    color:#36bac6;
 }
 header .right_menu {
     margin-top:60px;
@@ -224,7 +228,9 @@ header .menu_btn {
 header .mobile_nav {
     display: none;
 }
-
+header .sub_link {
+    color: #ff0000;
+}
 
 /* section */
 
@@ -1577,6 +1583,9 @@ footer .top {
         margin-left: 20px;
         padding: 10px;
         font-weight: 700;
+    }
+    header .mobile_nav .mobile_nav_in nav .sub li a.sub_link {
+        color: #ff0000;
     }
     header .mobile_nav .mobile_nav_in nav {
         display: block;
